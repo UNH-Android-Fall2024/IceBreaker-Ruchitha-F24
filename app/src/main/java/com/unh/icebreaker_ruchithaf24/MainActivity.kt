@@ -56,9 +56,8 @@ class MainActivity : AppCompatActivity() {
         val lastName  = binding.txtLastName
         val prefName  = binding.txtPrefName
         val answer    = binding.txtAnswer
-        val question  = binding.txtQuestion
 
-        Log.d(TAG, "Variable: ${firstName.text} ${lastName.text} ${prefName.text} ${answer.text} $question")
+        Log.d(TAG, "Variable: ${firstName.text} ${lastName.text} ${prefName.text} ${answer.text}")
 
         val student = hashMapOf(
             "firstname" to firstName.text.toString(),
@@ -66,7 +65,7 @@ class MainActivity : AppCompatActivity() {
             "prefname"  to prefName.text.toString(),
             "answer"    to answer.text.toString(),
             "class"     to className,
-            "question"  to question.text.toString()
+            "question"  to binding.txtQuestion.text.toString()
         )
         //Access to firebase database
         db.collection("students")
