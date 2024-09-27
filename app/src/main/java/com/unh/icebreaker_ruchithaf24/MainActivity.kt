@@ -1,5 +1,5 @@
 package com.unh.icebreaker_ruchithaf24
-//IceBreaker app made fall2024
+//IceBreaker app made Fall2024
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
